@@ -43,5 +43,3 @@ This contains all functionality of the webpages. It has input validation that ch
 To run this project locally, you'll need the following installed on your machine:
 
 - Web browser (Google Chrome, Mozilla Firefox, etc.)
-
-#How_It
