@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spring Duplication</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="dialog">
+            <input type="text" name="input-string" id="input-string" placeholder="Enter your characters" required>
+            <span class="error"></span>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const submitBtn = document.getElementById('submit-btn');
+        submitBtn.addEventListener('click', () => {
+            const inputString = document.getElementById('input-string').value;
+          localStorage.setItem('input-string', inputString);
+          window.location.href = 'result.html';
+        });
+
+    });
+      </script>
+
+</body>
+</html>
